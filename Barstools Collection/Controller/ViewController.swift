@@ -8,13 +8,16 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let postManager = PostManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         print("Hello!")
+        
+       postManager.fetchInfo()
     }
-
 
 }
 
