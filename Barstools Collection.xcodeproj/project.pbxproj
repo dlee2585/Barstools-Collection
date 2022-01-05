@@ -20,6 +20,11 @@
 		545549FF27861210006D5AD5 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545549FE27861210006D5AD5 /* Images.swift */; };
 		54554A0127861307006D5AD5 /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54554A0027861307006D5AD5 /* Author.swift */; };
 		54554A03278613F0006D5AD5 /* Post+TypeMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54554A02278613F0006D5AD5 /* Post+TypeMeta.swift */; };
+		54554A05278621E0006D5AD5 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54554A04278621E0006D5AD5 /* PostCollectionViewCell.swift */; };
+		54554A0727862419006D5AD5 /* ImageView+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54554A0627862419006D5AD5 /* ImageView+URL.swift */; };
+		54554A0D27862D81006D5AD5 /* PostView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54554A0C27862D81006D5AD5 /* PostView.xib */; };
+		54554A0F27862FB1006D5AD5 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54554A0E27862FB1006D5AD5 /* PostView.swift */; };
+		54554A11278630D1006D5AD5 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54554A10278630D1006D5AD5 /* PostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +43,11 @@
 		545549FE27861210006D5AD5 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		54554A0027861307006D5AD5 /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
 		54554A02278613F0006D5AD5 /* Post+TypeMeta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Post+TypeMeta.swift"; sourceTree = "<group>"; };
+		54554A04278621E0006D5AD5 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
+		54554A0627862419006D5AD5 /* ImageView+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageView+URL.swift"; sourceTree = "<group>"; };
+		54554A0C27862D81006D5AD5 /* PostView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostView.xib; sourceTree = "<group>"; };
+		54554A0E27862FB1006D5AD5 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		54554A10278630D1006D5AD5 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +86,6 @@
 				545549F427860BF1006D5AD5 /* Model */,
 				545549F627860C12006D5AD5 /* Controller */,
 				545549F527860C08006D5AD5 /* View */,
-				545549E4278605DD006D5AD5 /* Main.storyboard */,
 				545549E7278605E0006D5AD5 /* Assets.xcassets */,
 				545549E9278605E0006D5AD5 /* LaunchScreen.storyboard */,
 				545549EC278605E0006D5AD5 /* Info.plist */,
@@ -100,6 +109,10 @@
 		545549F527860C08006D5AD5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				54554A04278621E0006D5AD5 /* PostCollectionViewCell.swift */,
+				545549E4278605DD006D5AD5 /* Main.storyboard */,
+				54554A0C27862D81006D5AD5 /* PostView.xib */,
+				54554A0E27862FB1006D5AD5 /* PostView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -108,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				545549E2278605DD006D5AD5 /* ViewController.swift */,
+				54554A10278630D1006D5AD5 /* PostViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -116,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				545549F727860C89006D5AD5 /* NetworkManager.swift */,
+				54554A0627862419006D5AD5 /* ImageView+URL.swift */,
 			);
 			path = Lib;
 			sourceTree = "<group>";
@@ -180,6 +195,7 @@
 			files = (
 				545549EB278605E0006D5AD5 /* LaunchScreen.storyboard in Resources */,
 				545549E8278605E0006D5AD5 /* Assets.xcassets in Resources */,
+				54554A0D27862D81006D5AD5 /* PostView.xib in Resources */,
 				545549E6278605DD006D5AD5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,13 +209,17 @@
 			files = (
 				54554A03278613F0006D5AD5 /* Post+TypeMeta.swift in Sources */,
 				545549E3278605DD006D5AD5 /* ViewController.swift in Sources */,
+				54554A11278630D1006D5AD5 /* PostViewController.swift in Sources */,
 				545549F327860BE7006D5AD5 /* PostManager.swift in Sources */,
 				545549F827860C89006D5AD5 /* NetworkManager.swift in Sources */,
 				54554A0127861307006D5AD5 /* Author.swift in Sources */,
 				545549FB2786111D006D5AD5 /* Post.swift in Sources */,
 				545549DF278605DD006D5AD5 /* AppDelegate.swift in Sources */,
 				545549FF27861210006D5AD5 /* Images.swift in Sources */,
+				54554A05278621E0006D5AD5 /* PostCollectionViewCell.swift in Sources */,
 				545549E1278605DD006D5AD5 /* SceneDelegate.swift in Sources */,
+				54554A0727862419006D5AD5 /* ImageView+URL.swift in Sources */,
+				54554A0F27862FB1006D5AD5 /* PostView.swift in Sources */,
 				545549FD2786117E006D5AD5 /* Thumbnail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
