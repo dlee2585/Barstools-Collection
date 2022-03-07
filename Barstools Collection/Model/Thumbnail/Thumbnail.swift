@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Thumbnail: Decodable {
+struct Thumbnail: Decodable, Equatable {
     let type: String
     let location: String
     let images: Images
@@ -22,6 +22,5 @@ struct Thumbnail: Decodable {
     
     var large: String {
         location + images.large
-    }
-    
+    }    
 }

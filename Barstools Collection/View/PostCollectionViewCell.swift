@@ -16,17 +16,20 @@ class PostCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var postLabel: UILabel!
     
+    // Configure subviews when cell is initialized from the nib for the first time
     override func awakeFromNib() {
         super.awakeFromNib()
         postLabel.numberOfLines = 0
     }
     
+    // Reset subviews when it is dequeued to be reused
     override func prepareForReuse() {
         super.prepareForReuse()
         postImageView.image = nil
         postLabel.text = nil
     }
     
+    // Configure cell based on a post
     func setPost(_ post: Post) {
         postImageView.setImage(url: post.thumbnail.small)
         postLabel.text = post.title

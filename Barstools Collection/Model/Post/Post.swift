@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Post: Decodable {
+struct Post: Decodable, Equatable {
     let id: Int
     let title: String
     let thumbnail: Thumbnail

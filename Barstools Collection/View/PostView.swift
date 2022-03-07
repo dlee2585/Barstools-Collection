@@ -14,6 +14,7 @@ class PostView: UIView {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var webView: WKWebView!
     
+    // Configure subviews when cell is initialized from the nib for the first time
     override func awakeFromNib() {
         super.awakeFromNib()
         titleLabel.numberOfLines = 0
@@ -21,10 +22,11 @@ class PostView: UIView {
     
     func setPost(_ post: Post) {
         titleLabel.text = post.title
-        guard let htmlString =
-                post.typeMeta.standardPost?.content else {
-                    return
-                }
+        
+        guard let htmlString = post.typeMeta.standardPost?.content else {
+            return
+        }
+        
         webView.loadHTMLString(htmlString, baseURL: nil)
     }
 }

@@ -28,7 +28,7 @@
                     </wkWebViewConfiguration>
                 </wkWebView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PsA-Oc-b0f">
-                    <rect key="frame" x="10" y="54" width="414" height="20.5"/>
+                    <rect key="frame" x="10" y="54" width="394" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -43,7 +43,7 @@
                 <constraint firstItem="bdB-1S-581" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="XC9-5N-INm"/>
                 <constraint firstItem="bdB-1S-581" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="gLG-Ob-Mc2"/>
                 <constraint firstAttribute="bottom" secondItem="bdB-1S-581" secondAttribute="bottom" id="kD9-VL-rea"/>
-                <constraint firstItem="PsA-Oc-b0f" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="10" id="xQv-QQ-HTb"/>
+                <constraint firstItem="PsA-Oc-b0f" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="-10" id="xQv-QQ-HTb"/>
             </constraints>
             <connections>
                 <outlet property="titleLabel" destination="PsA-Oc-b0f" id="dpe-Wz-2Un"/>

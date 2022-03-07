@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Author: Decodable {
+struct Author: Decodable, Equatable {
     let name: String
     let avatar: String
 }

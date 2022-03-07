@@ -9,6 +9,9 @@ import Foundation
 import UIKit
 
 extension UIImageView {
+    /// setImage
+    ///
+    /// Asynchronously set the image of the imageView with a given url.
     func setImage(url: String) {
         guard let url = URL(string: url) else {
             return

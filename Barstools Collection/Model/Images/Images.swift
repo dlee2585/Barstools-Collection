@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Images: Decodable {
+struct Images: Decodable, Equatable {
     let small: String
     let medium: String
     let large: String

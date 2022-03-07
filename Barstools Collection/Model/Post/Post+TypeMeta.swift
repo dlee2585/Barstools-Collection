@@ -8,7 +8,7 @@
 import Foundation
 
 extension Post {
-    struct TypeMeta: Decodable {
+    struct TypeMeta: Decodable, Equatable {
         var standardPost: StandardPost?
         
         enum CodingKeys: String, CodingKey {
@@ -16,7 +16,7 @@ extension Post {
         }
     }
     
-    struct StandardPost: Decodable {
+    struct StandardPost: Decodable, Equatable {
         let content: String?
     }
 }

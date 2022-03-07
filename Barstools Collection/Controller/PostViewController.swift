@@ -10,7 +10,7 @@ import UIKit
 
 class PostViewController: UIViewController {
     
-    let post: Post
+    private let post: Post
     
     @IBOutlet var postView: PostView!
     
@@ -27,6 +27,5 @@ class PostViewController: UIViewController {
         super.viewDidLoad()
         
         postView.setPost(post)
-
     }
 }
