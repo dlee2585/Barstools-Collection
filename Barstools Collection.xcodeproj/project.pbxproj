@@ -37,6 +37,7 @@
 		54E6814F27D675EC0072794C /* MockPostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E6814E27D675EC0072794C /* MockPostService.swift */; };
 		54E6815127D6775D0072794C /* PostManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E6815027D6775D0072794C /* PostManagerTests.swift */; };
 		54E6815327D6878C0072794C /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E6815227D6878C0072794C /* UIViewController+Alert.swift */; };
+		54E6815527D692920072794C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 54E6815427D692920072794C /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		54E6814E27D675EC0072794C /* MockPostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPostService.swift; sourceTree = "<group>"; };
 		54E6815027D6775D0072794C /* PostManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostManagerTests.swift; sourceTree = "<group>"; };
 		54E6815227D6878C0072794C /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		54E6815427D692920072794C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		545549D2278605DD006D5AD5 = {
 			isa = PBXGroup;
 			children = (
+				54E6815427D692920072794C /* README.md */,
 				545549DD278605DD006D5AD5 /* Barstools Collection */,
 				54E6812D27D66DCF0072794C /* Barstools CollectionTests */,
 				545549DC278605DD006D5AD5 /* Products */,
@@ -409,6 +412,7 @@
 			files = (
 				545549EB278605E0006D5AD5 /* LaunchScreen.storyboard in Resources */,
 				545549E8278605E0006D5AD5 /* Assets.xcassets in Resources */,
+				54E6815527D692920072794C /* README.md in Resources */,
 				54554A0D27862D81006D5AD5 /* PostView.xib in Resources */,
 				545549E6278605DD006D5AD5 /* Main.storyboard in Resources */,
 			);
