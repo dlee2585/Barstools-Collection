@@ -29,23 +29,41 @@ class PostManager {
     
     private let postService: PostProvidable
     
+    private var isLoading = false
+    
     init(postService: PostProvidable = PostService()) {
         self.postService = postService
     }
     
     func fetchPosts() {
+        guard !isLoading else {
+            return
+        }
+        
+        isLoading = true
+        
         postService.fetchPosts { posts in
+            self.isLoading = false
             self.posts = posts
             self.delegate?.didUpdatePosts(self, posts: posts)
         } onError: { error in
+            self.isLoading = false
             self.delegate?.didFailWithError(self, error: error)
         }
     }
     
     func fetchPost(post: Post) {
+        guard !isLoading else {
+            return
+        }
+        
+        isLoading = true
+        
         postService.fetchPost(post) { post in
+            self.isLoading = false
             self.delegate?.didFetchPost(self, post: post)
         } onError: { error in
+            self.isLoading = false
             self.delegate?.didFailWithError(self, error: error)
         }
     }
