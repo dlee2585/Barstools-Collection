@@ -23,7 +23,6 @@ class PostService: PostProvidable {
     /// fetchPosts
     ///
     /// Attempt to fetch from the provided API.
-    /// Notifies the delegate upon success/failure.
     
     func fetchPosts(onCompletion: @escaping ([Post]) -> Void, onError: @escaping (Error) -> Void) {
         networkService.performRequest(with: postsURL, [Post].self, onCompletion: onCompletion, onError: onError)

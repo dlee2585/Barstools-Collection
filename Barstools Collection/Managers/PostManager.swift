@@ -56,7 +56,7 @@ class PostManager {
         guard !isLoading else {
             return
         }
-        
+
         isLoading = true
         
         postService.fetchPost(post) { post in
